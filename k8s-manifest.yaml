@@ -1,27 +1,3 @@
-# 2048
-
-A simple HTML CSS JS game copied from
-
-https://hczhcz.github.io/2048/20ez/
-
-And dockerized + deployed on kubernetes for fun.
-
--   Dockerfile
-
-```Dockerfile
-FROM nginx
-
-COPY . /usr/share/nginx/html
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
-
-```
-
--   k8s-manifest.yaml
-
-```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -54,4 +30,3 @@ spec:
         - port: 80
           targetPort: 80
           nodePort: 30007
-```
