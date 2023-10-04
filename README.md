@@ -1,7 +1,7 @@
 # 2048
 
 A simple HTML CSS JS game copied from
-
+https://github.com/gabrielecirulli/2048
 https://hczhcz.github.io/2048/20ez/
 
 And dockerized + deployed on kubernetes for fun.
